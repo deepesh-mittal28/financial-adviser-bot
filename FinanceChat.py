@@ -41,10 +41,11 @@ prompt = PromptTemplate(
 
 # Streamlit UI
 st.set_page_config(page_title="Finance Chat with AI", layout="wide")
-st.title("Finance Chat with Custom Prompts")
+st.title("Finance Chat For Education")
 
 with st.sidebar:
     st.header("Financial Analysis Options")
+    st.subheader(" Choose the relevant experience and the style of learning ")
     user_type = st.selectbox(
         "Audience Expertise",
         ["beginner", "intermediate", "expert", "researcher", "educator"]
@@ -53,11 +54,21 @@ with st.sidebar:
         "Response Style",
         ["friendly", "formal", "professional", "concise"]
     )
+    
+    st.warning("Note :- I am still learning..")
+    st.warning("Disclaimer :- Please use this only for education purpose")
+    st.write("---")
+    st.write("Powered by Cohere and Streamlit")
+    st.write()
+    st.write("Author - Deepesh Mittal")
 
 topic = st.text_input(
     "Enter a finance topic and press Generate:",
     placeholder="e.g., portfolio diversification"
 )
+
+
+
 
 if st.button("Generate Analysis"):
     if not topic:

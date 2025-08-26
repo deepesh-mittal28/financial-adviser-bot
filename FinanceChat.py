@@ -4,7 +4,7 @@ from langchain_cohere import ChatCohere
 from langchain.prompts import PromptTemplate
 
 # Initialize Cohere LLM 
-COHERE_API_KEY = "kPgnnLlld3J2HmD5tbp32bDOD2r4KURZP99NkgxO"
+COHERE_API_KEY = "cD6t4lI1gBdStUzqiwcP2jC0J8K88mfR21NvEyLB"
 llm = ChatCohere(
     cohere_api_key=COHERE_API_KEY,
     temperature=0.5,
